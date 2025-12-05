@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remi: A Gentle Voice Companion for Dementia Care</title>
+    <!-- Load Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Custom Colors & Global Styles based on the Design System */
+        :root {
+            --color-remi-teal: #4A9090;
+            --color-soft-blue: #7BB8C7;
+            --color-warm-sand: #F4EFE6;
+            --color-soft-rose: #F0B2B2;
+            --color-gentle-gray: #A0AEC0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff; /* Default background */
+            color: #1a202c; /* Near-black for high contrast */
+            line-height: 1.7; /* High line-height for readability */
+        }
+
+        /* Enforce large base text size for accessibility */
+        .text-body {
+            font-size: 1.125rem; /* 18px equivalent minimum */
+        }
+
+        .cta-button {
+            border-radius: 32px; /* Super rounded corners */
+            padding: 1rem 2rem;
+            font-size: 1.125rem;
+            font-weight: 600;
+            min-height: 44px; /* Senior-friendly touch target */
+        }
+
+        /* Specific styles for Remi Teal */
+        .bg-remi-teal { background-color: var(--color-remi-teal); }
+        .text-remi-teal { color: var(--color-remi-teal); }
+        .border-remi-teal { border-color: var(--color-remi-teal); }
+        .bg-warm-sand { background-color: var(--color-warm-sand); }
+        .bg-soft-blue { background-color: var(--color-soft-blue); }
+    </style>
+</head>
+
+<body class="antialiased">
+
+    <!-- Navigation -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300">
+        <nav class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="text-3xl font-bold text-remi-teal">Remi</a>
+
+            <!-- Desktop Nav & Primary CTA -->
+            <div class="flex items-center space-x-6">
+                <a href="#how-remi-helps" class="text-lg text-gray-700 hover:text-remi-teal transition duration-200 hidden lg:inline">How Remi Helps</a>
+                <a href="#demo" class="text-lg text-gray-700 hover:text-remi-teal transition duration-200 hidden lg:inline">Demo</a>
+                <a href="#early-access" class="cta-button bg-remi-teal text-white hover:opacity-90 transition duration-300 shadow-lg">
+                    Join Early Access
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- ⭐ SECTION 1 — Hero -->
+        <section class="bg-warm-sand pt-16 pb-24 lg:pt-24 lg:pb-32">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="space-y-8">
+                    <h1 class="text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        A Gentle Voice Companion for Your Loved One — and Peace of Mind for You
+                    </h1>
+                    <p class="text-2xl text-gray-700 leading-relaxed font-light">
+                        Remi provides warm conversation, daily reminders, and early detection of changes — supporting people living with dementia and their families.
+                    </p>
+                    
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                        <a href="#early-access" class="cta-button bg-remi-teal text-white hover:bg-opacity-90 transition duration-300 shadow-xl shadow-remi-teal/40">
+                            Join the Early Access List
+                        </a>
+                        <a href="#demo" class="cta-button border-2 border-remi-teal text-remi-teal hover:bg-remi-teal hover:text-white transition duration-300">
+                            Hear Remi’s Voice
+                        </a>
+                    </div>
+                    
+                    <!-- Supporting Copy -->
+                    <div class="text-base text-gray-600 space-y-2 pt-4">
+                        <p>Built with dementia clinicians.</p>
+                        <p>Privacy-first. No cameras.</p>
+                    </div>
+                </div>
+
+                <!-- Hero Visual Placeholder (Soft, Human-Centered) -->
+                <div class="order-first lg:order-last">
+                    <div class="bg-soft-blue w-full aspect-[4/3] rounded-3xl shadow-2xl p-8 flex items-center justify-center text-center text-white text-xl font-semibold">
+                        <!-- Placeholder for soft, human-centered photography -->
+                        <p>Soft Visual: Older adult interacting with the gentle AI presence (No screen/gadgets shown)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 2 — The Dementia Care Gap -->
+        <section class="py-24 lg:py-32 bg-white" id="care-gap">
+            <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-12">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
+                    You can’t be there every minute. Remi can.
+                </h2>
+                
+                <p class="text-body max-w-3xl mx-auto text-gray-700">
+                    Caring for someone with dementia is full of love — and full of pressure. Missed routines, loneliness, and subtle declines often go unnoticed until it’s too late.
+                </p>
+                <p class="text-xl font-semibold text-remi-teal max-w-4xl mx-auto">
+                    Remi fills the quiet, stressful gaps with a calm presence that supports both the person you care for and you.
+                </p>
+
+                <!-- Challenges Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
+                    <div class="p-4 rounded-xl bg-soft-blue/10 text-remi-teal font-semibold">Loneliness increases confusion</div>
+                    <div class="p-4 rounded-xl bg-soft-blue/10 text-remi-teal font-semibold">Routines slip easily</div>
+                    <div class="p-4 rounded-xl bg-soft-blue/10 text-remi-teal font-semibold">Warning signs are subtle</div>
+                    <div class="p-4 rounded-xl bg-soft-blue/10 text-remi-teal font-semibold">Caregivers burn out</div>
+                </div>
+                
+                <!-- Transition -->
+                <p class="text-2xl font-light pt-8 text-gray-800">
+                    Remi brings steady companionship and actionable insight into the home.
+                </p>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 3 — How Remi Helps -->
+        <section class="py-24 lg:py-32 bg-warm-sand" id="how-remi-helps">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+                <h2 class="text-center text-4xl lg:text-5xl font-bold text-gray-900">
+                    Companionship, structure, and early insight — all in one gentle voice.
+                </h2>
+
+                <!-- Features Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <!-- Feature 1: Conversation -->
+                    <div class="p-8 bg-white rounded-xl shadow-xl space-y-4 border-t-4 border-remi-teal">
+                        <span class="text-4xl text-remi-teal">🗣️</span>
+                        <h3 class="text-2xl font-bold text-gray-900">1. Humanlike, Dementia-Aware Conversation</h3>
+                        <p class="text-body text-gray-700">Remi speaks slowly, calmly, and clearly — a style shown to reduce confusion and anxiety.</p>
+                    </div>
+                    <!-- Feature 2: Routines -->
+                    <div class="p-8 bg-white rounded-xl shadow-xl space-y-4 border-t-4 border-remi-teal">
+                        <span class="text-4xl text-remi-teal">⏰</span>
+                        <h3 class="text-2xl font-bold text-gray-900">2. Daily Routines Made Easier</h3>
+                        <p class="text-body text-gray-700">Hydration, meals, medication, movement, and bedtime — all reinforced through gentle reminders.</p>
+                    </div>
+                    <!-- Feature 3: Early Detection -->
+                    <div class="p-8 bg-white rounded-xl shadow-xl space-y-4 border-t-4 border-remi-teal">
+                        <span class="text-4xl text-remi-teal">👂</span>
+                        <h3 class="text-2xl font-bold text-gray-900">3. Early Detection Through Voice</h3>
+                        <p class="text-body text-gray-700">Changes in tone, hesitation, confusion, or energy can signal decline. Remi detects these subtle patterns and notifies families early.</p>
+                    </div>
+                    <!-- Feature 4: Privacy -->
+                    <div class="p-8 bg-white rounded-xl shadow-xl space-y-4 border-t-4 border-remi-teal">
+                        <span class="text-4xl text-remi-teal">🔒</span>
+                        <h3 class="text-2xl font-bold text-gray-900">4. Respectful Care, Zero Cameras</h3>
+                        <p class="text-body text-gray-700">No video. No surveillance. Just a caring voice presence.</p>
+                    </div>
+                    <!-- Feature 5: Summary -->
+                    <div class="p-8 bg-white rounded-xl shadow-xl space-y-4 border-t-4 border-remi-teal">
+                        <span class="text-4xl text-remi-teal">📋</span>
+                        <h3 class="text-2xl font-bold text-gray-900">5. A Simple Daily Summary for Families</h3>
+                        <p class="text-body text-gray-700">Understand how the day went — mood, engagement, or anything unusual.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 4 — Remi Voice Agent Demo -->
+        <section class="py-24 lg:py-32 bg-white" id="demo">
+            <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-10">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+                    Meet Remi
+                </h2>
+                <p class="text-body text-gray-700">
+                    A short preview of the companion we’re building with our early access families.
+                </p>
+
+                <!-- Audio Player Component Placeholder -->
+                <div class="bg-warm-sand p-8 rounded-2xl shadow-xl mx-auto max-w-lg space-y-6">
+                    <div class="flex items-center justify-center space-x-4">
+                        <button aria-label="Play Remi Demo Voice" class="w-16 h-16 bg-remi-teal rounded-full flex items-center justify-center hover:opacity-90 transition duration-300 shadow-lg">
+                            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd"></path></svg>
+                        </button>
+                        <div class="h-2 w-full bg-remi-teal/30 rounded-full">
+                            <div class="h-full w-1/3 bg-remi-teal rounded-full animate-pulse"></div>
+                        </div>
+                    </div>
+                    <p class="text-sm italic text-gray-600">
+                        “This early demo shows Remi’s tone — warm, steady, and designed for dementia comfort.”
+                    </p>
+                </div>
+                <elevenlabs-convai agent-id="agent_6401kbmfeqe3ej7ag5s74cavqj10"></elevenlabs-convai><script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+                <!-- Sample Scripts -->
+                <div class="pt-8 space-y-6 text-left max-w-lg mx-auto">
+                    <div class="p-4 bg-soft-blue/10 rounded-lg">
+                        <strong class="text-remi-teal">Morning Check-In:</strong> “Good morning. How did you sleep? Let’s start the day with a little water.”
+                    </div>
+                    <div class="p-4 bg-soft-blue/10 rounded-lg">
+                        <strong class="text-remi-teal">Redirection:</strong> “You’re looking for your glasses. Let’s check the table near the window — that’s a good place.”
+                    </div>
+                    <div class="p-4 bg-soft-blue/10 rounded-lg">
+                        <strong class="text-remi-teal">Evening Wind-Down:</strong> “I can stay and talk with you a bit before bed. Would you like that?”
+                    </div>
+                </div>
+
+                <a href="#early-access" class="cta-button bg-remi-teal text-white hover:opacity-90 transition duration-300 mt-8 inline-block">
+                    Join the Early Access List
+                </a>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 5 — Why Families Love Remi -->
+        <section class="py-24 lg:py-32 bg-warm-sand">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 space-y-16">
+                <h2 class="text-center text-4xl lg:text-5xl font-bold text-gray-900 max-w-4xl mx-auto">
+                    A companion that feels familiar — not robotic.
+                </h2>
+
+                <!-- Testimonials Grid -->
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl shadow-remi-teal/10 space-y-4">
+                        <p class="text-4xl font-serif text-remi-teal">“</p>
+                        <p class="text-xl italic text-gray-800">“My mother actually relaxes when Remi speaks.”</p>
+                        <p class="font-semibold text-gray-600">— Daughter, 54</p>
+                    </div>
+                    <!-- Testimonial 2 -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl shadow-remi-teal/10 space-y-4">
+                        <p class="text-4xl font-serif text-remi-teal">“</p>
+                        <p class="text-xl italic text-gray-800">“It feels like having another gentle helper in the home.”</p>
+                        <p class="font-semibold text-gray-600">— Husband, 71</p>
+                    </div>
+                    <!-- Testimonial 3 -->
+                    <div class="p-8 bg-white rounded-2xl shadow-xl shadow-remi-teal/10 space-y-4">
+                        <p class="text-4xl font-serif text-remi-teal">“</p>
+                        <p class="text-xl italic text-gray-800">“Remi caught dehydration early — it prevented an ER trip.”</p>
+                        <p class="font-semibold text-gray-600">— Son, 47</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 6 — Built on New AI + Clinical Rigor -->
+        <section class="py-24 lg:py-32 bg-white">
+            <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-12 items-start">
+                <div>
+                    <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-8">
+                        Powered by breakthrough AI — grounded in real dementia care.
+                    </h2>
+                    
+                    <!-- Bullets -->
+                    <ul class="space-y-6 text-body text-gray-700">
+                        <li class="flex items-start space-x-3">
+                            <span class="text-xl text-remi-teal font-bold pt-1">✅</span>
+                            <span>Understands patterns in speech</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-xl text-remi-teal font-bold pt-1">✅</span>
+                            <span>Built with gerontologists and caregivers</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-xl text-remi-teal font-bold pt-1">✅</span>
+                            <span>Personalized to your loved one’s needs</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-xl text-remi-teal font-bold pt-1">✅</span>
+                            <span>HIPAA-ready and private</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <span class="text-xl text-remi-teal font-bold pt-1">✅</span>
+                            <span>Designed for emotional safety</span>
+                        </li>
+                    </ul>
+
+                    <p class="text-xl font-semibold text-remi-teal mt-12">
+                        Remi is technology that finally feels human.
+                    </p>
+                </div>
+
+                <!-- Trust and Rigor Placeholder -->
+                <div class="bg-soft-blue/20 p-8 rounded-2xl border border-soft-blue/50">
+                    <p class="text-2xl font-semibold text-gray-800 mb-4">Trust & Clinical Rigor</p>
+                    <p class="text-lg text-gray-600">Placeholder for "HIPAA-ready" badge and clinical partner logos.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ⭐ SECTION 7 — Who Remi Helps -->
+        <section class="py-24 lg:py-32 bg-soft-blue/10">
+            <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-12">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+                    Made for families supporting someone living with:
+                </h2>
+
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 text-left">
+                    <div class="p-4 bg-white rounded-lg shadow-md flex items-center space-x-3">
+                        <span class="text-2xl text-remi-teal font-bold">🧠</span>
+                        <span class="text-body font-medium">Alzheimer’s</span>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md flex items-center space-x-3">
+                        <span class="text-2xl text-remi-teal font-bold">🧠</span>
+                        <span class="text-body font-medium">Vascular dementia</span>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md flex items-center space-x-3">
+                        <span class="text-2xl text-remi-teal font-bold">🧠</span>
+                        <span class="text-body font-medium">Lewy body dementia</span>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md flex items-center space-x-3">
+                        <span class="text-2xl text-remi-teal font-bold">🧠</span>
+                        <span class="text-body font-medium">Mild cognitive impairment</span>
+                    </div>
+                    <div class="p-4 bg-white rounded-lg shadow-md sm:col-span-2 lg:col-span-1 flex items-center justify-center sm:justify-start space-x-3">
+                        <span class="text-2xl text-remi-teal font-bold">🧠</span>
+                        <span class="text-body font-medium">Age-related memory decline</span>
+                    </div>
+                </div>
+
+                <a href="#early-access" class="cta-button border-2 border-remi-teal text-remi-teal hover:bg-remi-teal hover:text-white transition duration-300 mt-8 inline-block">
+                    Is Remi Right for Your Family?
+                </a>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 8 — Early Access Pricing -->
+        <section class="py-24 lg:py-32 bg-remi-teal text-white" id="early-access">
+            <div class="container mx-auto max-w-5xl px-4 sm:px-6 lg:px-8 text-center space-y-10">
+                <h2 class="text-4xl lg:text-5xl font-bold">
+                    Join early. Shape Remi's future.
+                </h2>
+                
+                <p class="text-xl font-light max-w-3xl mx-auto">
+                    Founding members receive:
+                </p>
+
+                <!-- Benefits List -->
+                <div class="grid sm:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+                    <div class="p-4 bg-white/20 rounded-xl flex items-center space-x-3">
+                        <span class="text-xl font-bold">✨</span>
+                        <span class="text-body">Discounted early pricing</span>
+                    </div>
+                    <div class="p-4 bg-white/20 rounded-xl flex items-center space-x-3">
+                        <span class="text-xl font-bold">🤝</span>
+                        <span class="text-body">Priority support</span>
+                    </div>
+                    <div class="p-4 bg-white/20 rounded-xl flex items-center space-x-3">
+                        <span class="text-xl font-bold">🔑</span>
+                        <span class="text-body">Full pilot access</span>
+                    </div>
+                    <div class="p-4 bg-white/20 rounded-xl flex items-center space-x-3">
+                        <span class="text-xl font-bold">💬</span>
+                        <span class="text-body">Influence on what we build next</span>
+                    </div>
+                </div>
+
+                <a href="#early-access" class="cta-button bg-white text-remi-teal hover:bg-gray-100 transition duration-300 mt-8 inline-block shadow-xl">
+                    Reserve Your Spot
+                </a>
+            </div>
+        </section>
+
+        <!-- ⭐ SECTION 9 — About Us -->
+        <section class="py-24 lg:py-32 bg-white">
+            <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-8">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900">
+                    We built Remi because dementia care shouldn’t feel so lonely.
+                </h2>
+                
+                <p class="text-body text-gray-700">
+                    We’ve experienced the stress, confusion, and heartbreak of dementia care ourselves. And we’ve spent years building human-centered AI.
+                </p>
+                
+                <p class="text-xl font-semibold text-remi-teal pt-4">
+                    Our mission: Bring companionship, dignity, and calm into every home affected by dementia.
+                </p>
+            </div>
+        </section>
+        
+        <!-- ⭐ SECTION 10 — Final CTA -->
+        <section class="py-24 lg:py-32 bg-warm-sand">
+            <div class="container mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center space-y-10">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
+                    Give your loved one companionship. Give yourself a moment to breathe.
+                </h2>
+
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 justify-center pt-4">
+                    <a href="#early-access" class="cta-button bg-remi-teal text-white hover:bg-opacity-90 transition duration-300 shadow-xl shadow-remi-teal/40">
+                        Join the Early Access List
+                    </a>
+                    <a href="#demo" class="cta-button border-2 border-remi-teal text-remi-teal hover:bg-remi-teal hover:text-white transition duration-300">
+                        Hear Remi’s Voice
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center text-sm">
+            <p>&copy; 2025 Remi. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="#" class="hover:text-remi-teal transition duration-200">Privacy Policy</a>
+                <a href="#" class="hover:text-remi-teal transition duration-200">Terms of Service</a>
+                <a href="#" class="hover:text-remi-teal transition duration-200">FAQ</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
